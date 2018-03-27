@@ -40,18 +40,15 @@
             <version>0.11</version>
             <configuration>
                 <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
-               <!--  <noJekyll>true</noJekyll>                                  disable webpage processing
-                <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> matches distribution management repository url above
-                <branch>mvn-repo</branch>                       remote branch name -->
+                <!--  <noJekyll>true</noJekyll> -->                            <!--       disable webpage processing -->
+                <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!--  matches distribution management repository url above-->
+                <branch>refs/heads/mvn-repo</branch>                      <!--  remote branch name -->
                 <includes><include>**/*</include></includes>
-                <!-- <repositoryName>sandrino70/AEM-project-fsi</repositoryName>      github repo name
-                <repositoryOwner>alex19_70@yahoo.it</repositoryOwner>    github username 
- -->        
-  				<branch>refs/heads/mvn-repo</branch> 
- 				<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> 
  				<server>github</server> 
- 				 <!-- The location where the site is uploaded 
-                <path>sandrino70/AEM-project-fsi</path>-->
+ 				 <!-- The location where the site is uploaded -->
+                <!-- <path></path -->
+                <!-- <repositoryName>sandrino70/AEM-project-fsi</repositoryName>      github repo name
+                <repositoryOwner>alex19_70@yahoo.it</repositoryOwner> --> 
                 <!-- Use merge or override the content -->
                 <merge>true</merge>   
  			</configuration>
